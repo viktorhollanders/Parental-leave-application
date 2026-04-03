@@ -60,8 +60,8 @@ export function DatePicker<T extends FieldValues>({
               type="date"
               className="w-full mr-10 [&::-webkit-calendar-picker-indicator]:hidden"
               value={
-                field.value instanceof Date
-                  ? field.value.toISOString().split("T")[0]
+                (field.value as unknown) instanceof Date
+                  ? (field.value as Date).toISOString().split("T")[0]
                   : ""
               }
               onChange={(e) => {

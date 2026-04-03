@@ -1,16 +1,11 @@
-type StepIndicatorProps = {
-  stepNumber: number;
-  stepLabel: string;
-  completed?: boolean;
-  active?: boolean;
-};
+import { Step } from "@/types";
 
 export function StepIndicator({
   stepNumber,
   stepLabel,
   completed,
   active,
-}: StepIndicatorProps) {
+}: Step) {
   return (
     <div className="flex flex-row items-center gap-2">
       <div
