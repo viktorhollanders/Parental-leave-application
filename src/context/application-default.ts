@@ -1,4 +1,5 @@
-import { Application, Step } from "@/types";
+import { Application } from "@/lib/schemas/";
+import { Step } from "@/types";
 
 export const defaultApplication: Application = {
   applicant: {
@@ -20,7 +21,7 @@ export const defaultApplication: Application = {
   partner: undefined,
   leave: {
     dateFrom: new Date(),
-    DateTo: new Date(),
+    dateTo: new Date(),
     employmentRatio: 25,
   },
   payment: {
@@ -32,7 +33,7 @@ export const defaultApplication: Application = {
 };
 
 export const applicationSteps: Step[] = [
-  { stepNumber: 1, stepLabel: "applicant", completed: false, active: true },
+  { stepNumber: 1, stepLabel: "applicant", completed: true, active: true },
   { stepNumber: 2, stepLabel: "employment", completed: false, active: false },
   { stepNumber: 3, stepLabel: "partner", completed: false, active: false },
   { stepNumber: 4, stepLabel: "leave", completed: false, active: false },

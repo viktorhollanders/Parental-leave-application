@@ -7,9 +7,9 @@ export function StepIndicator({
   active,
 }: Step) {
   return (
-    <div className="flex flex-row items-center gap-2">
+    <div className="flex flex-row items-center gap-1 md:gap-2">
       <div
-        className={`h-8 w-8 rounded-full flex justify-center items-center ${completed ? "bg-brand-primary" : "bg-brand-gray-600"}`}
+        className={`size-6 md:size-8 rounded-full flex justify-center items-center ${completed ? "bg-brand-primary" : "bg-brand-gray-600"}`}
       >
         <span
           className={`text-center text-2xl text-brand-gray-100 ${completed ? "font-bold" : ""}`}
@@ -18,7 +18,7 @@ export function StepIndicator({
         </span>
       </div>
       <h3
-        className={`${active ? "block" : "hidden md:block"} text-[16px] md:text-2xl ${completed ? "text-brand-primary font-bold " : "text-brand-gray-600"}`}
+        className={`capitalize ${active ? "block" : "hidden md:block"} text-[16px] md:text-2xl ${completed ? "text-brand-primary font-bold " : "text-brand-gray-600"}`}
       >
         {stepLabel}
       </h3>

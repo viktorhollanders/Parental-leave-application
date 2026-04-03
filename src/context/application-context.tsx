@@ -1,7 +1,8 @@
 "use client";
 import { createContext, useCallback, useState } from "react";
 import { defaultApplication, applicationSteps } from "./application-default";
-import { Application, Step } from "@/types";
+import { Step } from "@/types";
+import { Application } from "@/lib/schemas";
 
 interface ApplicationContextType {
   application: Application;

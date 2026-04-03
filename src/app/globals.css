@@ -36,6 +36,14 @@
   }
 }
 
+@utility page-container {
+  @apply w-full h-full pt-14 px-4 md:px-8 md:pt-32;
+}
+
+@utility page-header {
+  @apply text-center font-bold text-[32px] hidden md:block;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
