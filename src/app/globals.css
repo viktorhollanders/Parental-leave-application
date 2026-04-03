@@ -3,6 +3,23 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --brand-primary: oklch(54.13% 0.19 262.25);
+  --brand-primary-dark: oklch(34.47% 0.148 261.96);
+  --brand-secondary: oklch(89.55% 0.037 263.62 / 0.25);
+  --brand-gray-100: oklch(97.02% 0 0);
+  --brand-gray-300: oklch(81.41% 0 0);
+  --brand-gray-600: oklch(55.98% 0 17.2);
+  --brand-error: oklch(51.97% 0.188 30.9);
+}
+
+@theme {
+  --color-brand-primary: var(--brand-primary);
+  --color-brand-primary-dark: var(--brand-primary-dark);
+  --color-brand-secondary: var(--brand-secondary);
+  --color-brand-gray-100: var(--brand-gray-100);
+  --color-brand-gray-300: var(--brand-gray-300);
+  --color-brand-gray-600: var(--brand-gray-600);
+  --color-brand-error: var(--brand-error);
 }
 
 @theme inline {
